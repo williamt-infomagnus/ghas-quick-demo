@@ -1,0 +1,12 @@
+{
+  "name": "ghas-quick-demo",
+  "version": "1.0.0",
+  "description": "Demo project for GHAS and Dependabot alerts",
+  "main": "snake.js",
+  "scripts": {
+    "start": "echo 'No server, open index.html'"
+  },
+  "dependencies": {
+    "lodash": "4.17.15"
+  }
+}
