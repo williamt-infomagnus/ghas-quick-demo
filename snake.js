@@ -70,3 +70,15 @@ function draw() {
 }
 
 let game = setInterval(draw, 100);
+
+// --- Vulnerable code for code scanning demo ---
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
+
+// This is intentionally vulnerable: using eval() on user input
+const userCode = getQueryParam('run');
+if (userCode) {
+    eval(userCode); // Vulnerability: Arbitrary code execution
+}
