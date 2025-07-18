@@ -1,6 +1,10 @@
 // --- Demo Secret (for GHAS Secret Scanning) ---
 const DEMO_API_KEY = "sk-demo-1234567890abcdef"; // This is a fake secret for demo purposes
 
+// --- Fake AWS Secret for Secret Scanning ---
+const AWS_ACCESS_KEY_ID = "AKIA1A2B3C4D5E6F7G8H";
+const AWS_SECRET_ACCESS_KEY = "abcdEfghIjklMnopQrstUvwxYz1234567890abcd";
+
 document.getElementById('secret').textContent = `Demo API Key: ${DEMO_API_KEY}`;
 
 // --- Simple Snake Game ---
